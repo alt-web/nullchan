@@ -10,8 +10,7 @@ services:
       - "127.0.0.1:5001:5001"
       - "[::1]:5001:5001"
       # Gateway
-      - "127.0.0.1:5001:5001"
-      - "[::1]:8080:8080"
+      - 8080:8080
     volumes:
       # Import and export files from IPFS
       - ipfs-staging:/export
